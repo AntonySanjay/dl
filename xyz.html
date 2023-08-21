@@ -1,0 +1,71 @@
+<html>
+<head>
+<title>Form validaiton</title>
+<script type="text/javascript">
+function validate()
+{
+var fname=document.getElementById("name");
+var uname=document.getElementById("username");
+var password=document.getElementById("password1");
+var repassword=document.getElementById("passsword2");
+var address=document.getElementById("address");
+var age=document.getElementById("age");
+var gmail=document.getElementById("gmail");
+
+if(fname.value==""||uname.value==""||password.value==""||repassword.value==""||address.value==""||age.value==""||gmail.value=="")
+{
+alert("fill all the details");
+return false;
+}
+else{
+return true;
+}
+}
+</script>
+</head>
+<body>
+<form onsubmit="return validate()" action="xyz.html" method="POST">
+<center><h3>Registration form</h3>
+<table border="4" bordercolor="blue" cellpadding="2" cellspacing="2" width="40%">
+<tr>
+<td>Full Name</td>
+<td>:</td>
+<td><input type="text" placeholder="full name" id="name"></td>
+</tr>
+<tr>
+<td>User Name</td>
+<td>:</td>
+<td><input type="text" placeholder="user name" id="username"></td>
+</tr>
+<tr>
+<td>Password</td>
+<td>:</td>
+<td><input type="text" placeholder="Password" id="password1"></td>
+</tr>
+<tr>
+<td>Re password</td>
+<td>:</td>
+<td><input type="text" placeholder="Re password" id="password2"></td>
+</tr>
+<tr>
+<td>Address</td>
+<td>:</td>
+<td><input type="text" placeholder="Address" id="address"></td>
+</tr>
+<tr>
+<td>Age</td>
+<td>:</td>
+<td><input type="number" placeholder="Age" id="age"></td>
+</tr>
+<tr>
+<td>Gender</td>
+<td>:</td>
+<td><input type="radio" label="male"  name="Gender" value="1">male</td>
+<td><input type="radio" label="female"  name="Gender" value="0">female</td>
+</tr>
+</table>
+<br><br>
+<input type="submit" name=""submit>
+</center>
+</form>
+</body>
